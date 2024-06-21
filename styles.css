@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+/* #userEmail {
+    font-size: 20px;
+    font-weight: bold;
+} */
+
+#todos {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#loginForm, #todoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginForm input, #loginForm button,
+#todoForm input, #todoForm button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#userInfo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#todoList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.taskInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.taskInput select, .taskInput input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#todos {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #444;
+}
+
+.todo button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.todo button:hover {
+    background-color: #cc0000;
+}
+
+#todoListDropdown {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Center the heading */
+.todo-heading {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Style for author h3 element */
+.author {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+.author:hover {
+    color: #007bff;
+}
+
+/* Footer style */
+.footer {
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px 0;
+    background-color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .logout-button, #userInfo {
+        top: 5px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .taskInput select, .taskInput input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .todo button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .logout-button, #userInfo {
+        top: 5px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .taskInput select, .taskInput input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .todo button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
